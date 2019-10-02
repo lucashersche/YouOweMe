@@ -10,22 +10,30 @@ var address = {
 
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         console.log('app.initialize()');
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+
+        //Toolbar
+        document.addEventListener('prechange', function(event) {
+            document.querySelector('ons-toolbar .center')
+              .innerHTML = event.tabItem.getAttribute('label');
+          });
     },
+
+
 
     // deviceready Event Handler
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         console.log('onDeviceReady()');
         this.receivedEvent('deviceready');
     },
 
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         //var parentElement = document.getElementById(id);
         //var listeningElement = parentElement.querySelector('.listening');
         //var receivedElement = parentElement.querySelector('.received');
@@ -35,7 +43,7 @@ var app = {
 
         console.log('Received Event: ' + id);
     },
-    helloworld: function(data){
+    helloworld: function (data) {
         console.log('helloworld() Hello ' + data);
         console.log(address);
     }
