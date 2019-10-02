@@ -1,6 +1,3 @@
-
-
-
 var address = {
     'longitude': 45435234,
     'latitude': 345934859,
@@ -8,6 +5,15 @@ var address = {
     'zip': 8512,
     'city': 'St.gallen',
     'type': 'privat'
+}
+
+const schuldenList = document.querySelector('#schulden.list');
+
+function renderSchulden(doc){
+    let li = document.createElement('li');
+    let nameSchuldner = document.createElement('span');
+    let betrag = document.createElement('span');
+    let fälligkeitsdatum = document.createElement('span');
 }
 
 var app = {
@@ -38,7 +44,9 @@ var app = {
         const db = firebase.firestore();
         //db.settings({ timestampsInSnapshots: true });
         db.collection('SchuldNr').get().then((snapshot) => {
-            console.log(snapshot.docs);
+            snapshot.docs.forEach(doc =>{
+                renderSchulden(doc);
+            });
         })
     },
 
