@@ -32,10 +32,10 @@
             <div class="center">Zeitliche Übersicht</div>
 
         </ons-toolbar>
-        <ons-list>
+        <ons-list id="schulden-list">
             <ons-list-item>
                 <div class="left">
-                        <h1>Altin Palushaj</h1>
+                    <h1>Altin Palushaj</h1>
                 </div>
                 <div class="right">
                     <h4>23 Fr</h4>
@@ -50,12 +50,12 @@
                 <div class="expandable-content list-item__expandable-content">Expandable content</div>
             </ons-list-item>
         </ons-list>
+
+
+        <ons-fab position="bottom right">
+            <ons-icon icon="md-plus" onclick="fn.load('add.html')"></ons-icon>
+        </ons-fab>
     </ons-page>
-
-
-    <script>
-
-    </script>
 
     <script src="lib/onsen/js/onsenui.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
