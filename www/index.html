@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Security-Policy" content="
+    <!--<meta http-equiv="Content-Security-Policy" content="
         default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
         style-src 'self' 'unsafe-inline';
         script-src * 'unsafe-inline';
@@ -13,7 +13,7 @@
         frame-src *;
         connect-src * ;
         ">
-
+    -->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -22,62 +22,26 @@
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
     <title>Hello World</title>
 </head>
 
 <body>
-
     <ons-page>
         <ons-toolbar>
-            <div class="center">Tab 1</div>
+            <div class="center">Lists</div>
         </ons-toolbar>
-
-        <ons-tabbar swipeable position="auto">
-            <ons-tab page="tab1.html" label="Tab 1" icon="ion-home, material:md-home" badge="7" active>
-            </ons-tab>
-            <ons-tab page="tab2.html" label="Tab 2" icon="md-settings" active-icon="md-face">
-            </ons-tab>
-        </ons-tabbar>
+        
     </ons-page>
 
-    <template id="tab1.html">
-        <ons-page id="Tab1">
-            <p style="text-align: center;">
-                This is the first page.
-            </p>
-        </ons-page>
-    </template>
 
-    <template id="tab2.html">
-        <ons-page id="Tab2">
-            <p style="text-align: center;">
-                This is the second page.
-            </p>
-        </ons-page>
-    </template>
+        <script>
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyDOsfvKDt632U1rqdYpQRy9O1E6rpzRnMQ",
-            authDomain: "youoweme-4eb28.firebaseapp.com",
-            databaseURL: "https://youoweme-4eb28.firebaseio.com",
-            projectId: "youoweme-4eb28",
-            storageBucket: "youoweme-4eb28.appspot.com",
-            messagingSenderId: "312190186855",
-            appId: "1:312190186855:web:b529ace118d847df972bc2",
-            measurementId: "G-4K2JXVNHR4"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-        const db = firebase.firestore();
-        db.settings({ timestampsInSnapshots: true });
-    </script>
+        </script>
 
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+        <script src="lib/onsen/js/onsenui.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
 
 </body>
 

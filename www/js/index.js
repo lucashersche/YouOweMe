@@ -1,4 +1,6 @@
 
+
+
 var address = {
     'longitude': 45435234,
     'latitude': 345934859,
@@ -15,10 +17,29 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
         //Toolbar
-        document.addEventListener('prechange', function(event) {
+        document.addEventListener('prechange', function (event) {
             document.querySelector('ons-toolbar .center')
-              .innerHTML = event.tabItem.getAttribute('label');
-          });
+                .innerHTML = event.tabItem.getAttribute('label');
+        });
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDOsfvKDt632U1rqdYpQRy9O1E6rpzRnMQ",
+            authDomain: "youoweme-4eb28.firebaseapp.com",
+            databaseURL: "https://youoweme-4eb28.firebaseio.com",
+            projectId: "youoweme-4eb28",
+            storageBucket: "youoweme-4eb28.appspot.com",
+            messagingSenderId: "312190186855",
+            appId: "1:312190186855:web:b529ace118d847df972bc2",
+            measurementId: "G-4K2JXVNHR4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+        //db.settings({ timestampsInSnapshots: true });
+        db.collection('SchuldNr').get().then((snapshot) => {
+            console.log(snapshot.docs);
+        })
     },
 
 
