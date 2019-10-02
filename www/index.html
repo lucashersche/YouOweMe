@@ -20,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
-
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
     <title>Hello World</title>
 </head>
 
@@ -55,8 +56,29 @@
         </ons-page>
     </template>
 
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDOsfvKDt632U1rqdYpQRy9O1E6rpzRnMQ",
+            authDomain: "youoweme-4eb28.firebaseapp.com",
+            databaseURL: "https://youoweme-4eb28.firebaseio.com",
+            projectId: "youoweme-4eb28",
+            storageBucket: "youoweme-4eb28.appspot.com",
+            messagingSenderId: "312190186855",
+            appId: "1:312190186855:web:b529ace118d847df972bc2",
+            measurementId: "G-4K2JXVNHR4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+    </script>
+
     <script src="lib/onsen/js/onsenui.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
 </body>
+
 </html>
