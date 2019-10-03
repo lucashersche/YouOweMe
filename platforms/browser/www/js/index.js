@@ -6,6 +6,14 @@ var address = {
     'city': 'St.gallen',
     'type': 'privat'
 }
+function hinzufuegen(){
+    document.getElementById("tabbar").setActiveTab(1);
+
+}
+document.addEventListener('prechange', function(event) {
+    document.querySelector('ons-toolbar .center')
+      .innerHTML = event.tabItem.getAttribute('label');
+  });
 
 const schuldenList = document.querySelector('#schulden.list');
 

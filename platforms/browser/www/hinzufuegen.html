@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="
+        default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+        style-src 'self' 'unsafe-inline';
+        script-src * 'unsafe-inline';
+        font-src * 'unsafe-inline';
+        media-src * blob:;
+        img-src 'self' data:;
+        frame-src *;
+        connect-src * ;
+        ">
+    -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+    <title>Hello World</title>
+</head>
+
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">Zeitliche Übersicht2</div>
+
+        </ons-toolbar>
+        <ons-list id="schulden-list">
+            <ons-list-item>
+                <div class="left">
+                    <h1>Altin Palushaj</h1>>
+                </div>
+                <div class="right">
+                    <h4>23 Fr</h4>
+                </div>
+            </ons-list-item>
+        </ons-list>
+
+
+        <ons-fab position="bottom right" id="plus" onclick="Hinzufuegen()">
+            <ons-icon icon="md-plus"></ons-icon>
+        </ons-fab>
+    </ons-page>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
