@@ -9,11 +9,24 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-audiorecorder": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
   "dependent_plugins": {},
-  "modules": [],
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-audiorecorder/www/client.js",
+      "id": "cordova-plugin-audiorecorder.client",
+      "pluginId": "cordova-plugin-audiorecorder",
+      "clobbers": [
+        "community.audiorecorder"
+      ]
+    }
+  ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-audiorecorder": "1.0.0"
   }
 }
