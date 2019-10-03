@@ -1,0 +1,57 @@
+{
+  "_from": "cordova-plugin-audiorecorder",
+  "_id": "cordova-plugin-audiorecorder@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-9jzltJdg/yhpNXjPSM5a1SOAqiQ=",
+  "_location": "/cordova-plugin-audiorecorder",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-audiorecorder",
+    "name": "cordova-plugin-audiorecorder",
+    "escapedName": "cordova-plugin-audiorecorder",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-audiorecorder/-/cordova-plugin-audiorecorder-1.0.0.tgz",
+  "_shasum": "f63ce5b49760ff28693578cf48ce5ad52380aa24",
+  "_spec": "cordova-plugin-audiorecorder",
+  "_where": "C:\\Users\\ardi_\\OneDrive\\Documenti\\IMS\\UK\\Modul335\\YouOweMe",
+  "author": {
+    "name": "James Grisdale"
+  },
+  "bugs": {
+    "url": "https://github.com/blackberry/WebWorks-Community-APIs/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-audiorecorder",
+    "platforms": [
+      "blackberry10"
+    ]
+  },
+  "deprecated": false,
+  "description": "BlackBerry 10 Community Contributed API to record audio to the filesystem",
+  "homepage": "https://github.com/blackberry/WebWorks-Community-APIs#readme",
+  "keywords": [
+    "blackberry",
+    "audio",
+    "record",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-blackberry10"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-audiorecorder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackberry/WebWorks-Community-APIs.git"
+  },
+  "version": "1.0.0"
+}
