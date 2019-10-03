@@ -11,9 +11,32 @@ const schuldenList = document.querySelector('#schulden.list');
 
 function renderSchulden(doc){
     let li = document.createElement('li');
-    let nameSchuldner = document.createElement('span');
-    let betrag = document.createElement('span');
-    let fälligkeitsdatum = document.createElement('span');
+    let NameSchuldner = document.createElement('span');
+    let NameSchuld = document.createElement('span');
+    let Betrag = document.createElement('span');
+    let Beschreibung = document.createElement('span');
+    let Entstehungsdatum = document.createElement('span');
+    let Fälligkeitsdatum = document.createElement('span');
+    let Typ = document.createElement('span');
+
+    li.setAttribute('data-id', doc.id);
+    NameSchuldner.textContent = doc.data().NameSchuldner;
+    NameSchuld.textContent = doc.data().NameSchuld;
+    Betrag.textContent = doc.data().Betrag;
+    Beschreibung.textContent = doc.data().Beschreibung;
+    Entstehungsdatum.textContent = doc.data().Entstehungsdatum;
+    Fälligkeitsdatum.textContent = doc.data().Fälligkeitsdatum;
+    Typ.textContent = doc.data().Typ;
+
+    li.appendChild(NameSchuldner);
+    li.appendChild(NameSchuld);
+    li.appendChild(Betrag);
+    li.appendChild(Beschreibung);
+    li.appendChild(Entstehungsdatum);
+    li.appendChild(Fälligkeitsdatum);
+    li.appendChild(Typ);
+
+    schuldenList.appendChild(li);
 }
 
 var app = {
