@@ -1,11 +1,3 @@
-var address = {
-    'longitude': 45435234,
-    'latitude': 345934859,
-    'street': 'thundorferstrasse',
-    'zip': 8512,
-    'city': 'St.gallen',
-    'type': 'privat'
-}
 function hinzufuegen() {
     document.getElementById("tabbar").setActiveTab(1);
 
@@ -102,13 +94,8 @@ var app = {
         //receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    },
-    helloworld: function (data) {
-        console.log('helloworld() Hello ' + data);
-        console.log(address);
     }
 };
 
 app.initialize();
-app.helloworld('World');
 

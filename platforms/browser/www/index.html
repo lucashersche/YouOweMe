@@ -23,7 +23,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
-    <title>Hello World</title>
+    <title>YouOweMe</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             <div class="center">Zeitliche Übersicht</div>
         </ons-toolbar>
 
-        <ons-tabbar swipeable position="auto" id='tabbar'>
+        <ons-tabbar position="auto" id='tabbar'>
             <ons-tab page="tab1.html" label="Zeitliche Übersicht" icon="ion-home, material:md-home" badge="7" active
                 hidden>
             </ons-tab>
@@ -46,7 +46,7 @@
             <ons-list id="schulden-list">
                 <ons-list-item>
                     <div class="left">
-                        <h1>Altin Palushaj</h1>>
+                        <h1>Altin Palushaj</h1>
                     </div>
                     <div class="right">
                         <h4>23 Fr</h4>
@@ -61,14 +61,14 @@
 
     <template id="tab2.html">
         <ons-page id="Tab2">
-            <ons-toolbar>
-                <div class="left toolbar__left">Zu meinem Gunsten</div>
-                <div class="right toolbar__right">Auf meine Kosten</div>
-            </ons-toolbar>
+            <ons-tabbar id="tabbar2">
+                <ons-tab page="tab2.html" active></ons-tab>
+                <ons-tab page="tab3.html"></ons-tab>
+            </ons-tabbar>
             <ons-list id="schulden-list">
                 <ons-list-item>
                     <div class="left">
-                        <h1>Altin Palushaj</h1>>
+                        <h1>Altin Palushaj</h1>
                     </div>
                     <div class="right">
                         <h4>23 Fr</h4>
@@ -77,6 +77,7 @@
             </ons-list>
         </ons-page>
     </template>
+
 
 
     <script src="lib/onsen/js/onsenui.js"></script>
