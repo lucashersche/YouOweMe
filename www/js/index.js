@@ -6,18 +6,18 @@ var address = {
     'city': 'St.gallen',
     'type': 'privat'
 }
-function hinzufuegen(){
+function hinzufuegen() {
     document.getElementById("tabbar").setActiveTab(1);
 
 }
-document.addEventListener('prechange', function(event) {
+document.addEventListener('prechange', function (event) {
     document.querySelector('ons-toolbar .center')
-      .innerHTML = event.tabItem.getAttribute('label');
-  });
+        .innerHTML = event.tabItem.getAttribute('label');
+});
 
 const schuldenList = document.querySelector('#schulden.list');
 
-function renderSchulden(doc){
+function renderSchulden(doc) {
     let li = document.createElement('li');
     let NameSchuldner = document.createElement('span');
     let NameSchuld = document.createElement('span');
@@ -75,7 +75,7 @@ var app = {
         const db = firebase.firestore();
         //db.settings({ timestampsInSnapshots: true });
         db.collection('SchuldNr').get().then((snapshot) => {
-            snapshot.docs.forEach(doc =>{
+            snapshot.docs.forEach(doc => {
                 renderSchulden(doc);
             });
         })
@@ -111,3 +111,4 @@ var app = {
 
 app.initialize();
 app.helloworld('World');
+
