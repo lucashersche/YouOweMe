@@ -1,5 +1,16 @@
+function home() {
+    document.getElementById("tabbar").setActiveTab(0);
+}
 function hinzufuegen() {
     document.getElementById("tabbar").setActiveTab(1);
+
+}
+function zuMeinenGunsten() {
+    document.getElementById("tabbar").setActiveTab(1);
+
+}
+function aufMeineKosten() {
+    document.getElementById("tabbar").setActiveTab(2);
 
 }
 document.addEventListener('prechange', function (event) {
