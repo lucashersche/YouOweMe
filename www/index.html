@@ -33,9 +33,10 @@
         </ons-toolbar>
 
         <ons-tabbar swipeable position="auto" id='tabbar'>
-            <ons-tab page="tab1.html" label="Tab 1" icon="ion-home, material:md-home" badge="7" active hidden>
+            <ons-tab page="tab1.html" label="Zeitliche Übersicht" icon="ion-home, material:md-home" badge="7" active
+                hidden>
             </ons-tab>
-            <ons-tab page="tab2.html" label="Tab 2" icon="md-settings" active-icon="md-face" hidden>
+            <ons-tab page="tab2.html" label="Schuld Hinzufügen" icon="md-settings" active-icon="md-face" hidden>
             </ons-tab>
         </ons-tabbar>
     </ons-page>
@@ -61,7 +62,8 @@
     <template id="tab2.html">
         <ons-page id="Tab2">
             <ons-toolbar>
-                <div class="center">Hinzufügen</div>
+                <div class="left toolbar__left">Zu meinem Gunsten</div>
+                <div class="right toolbar__right">Auf meine Kosten</div>
             </ons-toolbar>
             <ons-list id="schulden-list">
                 <ons-list-item>
@@ -73,9 +75,6 @@
                     </div>
                 </ons-list-item>
             </ons-list>
-            <ons-fab position="bottom right" id="plus" page="tab2.html">
-                <ons-icon icon="md-plus"></ons-icon>
-            </ons-fab>
         </ons-page>
     </template>
 
